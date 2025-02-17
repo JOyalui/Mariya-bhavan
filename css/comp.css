@@ -1,0 +1,362 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1D202B;
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+     
+}
+  
+  .navbar .logo img {
+    height: 50px;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+  }
+  
+  .navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar .btn.login {
+    border: 1px solid #ffffff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .navbar .btn.login:hover {
+    background-color: #1e9b95;
+    border: 1px solid #dee0e0;
+  }
+  
+
+
+
+
+
+
+
+/* Dashboard Navbar Styles */
+.dashboard-navbar {
+  background: #1D202B;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.dashboard-navbar .search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.dashboard-navbar .search-container input {
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 200px; /* Adjust width as necessary */
+  outline: none;
+}
+
+.dashboard-navbar .search-container .search-button {
+  background: #1e9b95;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.dashboard-navbar .search-container .search-button:hover {
+  background: #00cba9;
+}
+
+/* Dashboard Footer Styles */
+.dashboard-footer {
+  background: #f8f8f8;
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+}
+
+.dashboard-footer .footer-links {
+  margin-top: 0.5rem;
+}
+
+.dashboard-footer .footer-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.dashboard-footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.details-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1D202B;
+  color: #fff;
+}
+
+.details-navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0rem;
+}   
+
+
+.details-navbar .logo img {
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* Footer Styles */
+  .footer {
+    background: #f8f8f8;
+    color: #000;
+    padding: 2rem;
+  }
+  
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer .footer-logo img {
+    height: 63px;
+  }
+  .footer .footer-logo h1{
+    width: 350px;
+    font-family: 'Poppins';
+    line-height: 35px;
+  }
+  
+  .footer .footer-logo p {
+    max-width: 220px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .footer .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 41rem;
+    border-bottom: 3px solid #ccc;
+}
+  
+  .footer .newsletter h3{
+    float: left;
+    width: 230px;
+  }
+
+  .footer .newsletter-form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .footer .newsletter-form input {
+    padding: 11px 46px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    flex: 169px;
+    max-width: 300px;
+    background-image: url(/images/person_fill.png);
+    background-position: 15px 8px;
+    background-repeat: no-repeat;
+    background-size: 15px;  
+  }
+  
+  .footer .newsletter-form button {
+    background: #1e9b95;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 45px 12px 20px;
+    background-image: url(/images/Vector.png);
+    background-repeat: no-repeat;
+    background-position: 88px 15px;
+    background-size: 16px;  
+    cursor: pointer;
+  }
+  .footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 15rem;  
+  }
+  
+  .footer .footer-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .footer .footer-links div h4 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer .footer-links ul li a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #000;
+    width: 150px;
+    display: flex;
+    margin-top: 18px; 
+}
+  
+  .footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #ccc;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .footer .footer-bottom-links a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .footer .footer-bottom-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dark Mode */
+  .footer-dark {
+    background: #000;
+    color: #fff;
+  }
+  
+  .footer-dark a {
+    color: #00cba9;
+  }
+  
+
+
+
+
+
+  /* 📱 Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .navbar .nav-links {
+      gap: 2rem; /* Reduce space between navbar items */
+  }
+
+  .footer .newsletter {
+      gap: 10rem; /* Reduce spacing in the newsletter */
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer .footer-content {
+      gap: 5rem; /* Reduce footer section spacing */
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      padding: 1rem;
+  }
+
+  .navbar .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+  }
+
+  .dashboard-navbar .search-container input {
+      width: 100%; /* Make search input take full width */
+  }
+
+  .footer .newsletter {
+      gap: 3rem;
+  }
+
+  .footer .footer-content {
+      flex-direction: column;
+      gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .dashboard-navbar .search-container {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .footer .footer-links {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .footer .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+  }
+}

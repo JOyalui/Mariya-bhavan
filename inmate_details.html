@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmate Details</title>
+    <link rel="stylesheet" href="css/comp.css">
+    <link rel="stylesheet" href="css/inmate_details.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+</head>
+<body>
+    <nav class="details-navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo_white.png" alt="Mariya Bhavanam Charitable Trust">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 id="inmateName">Loading...</h1>
+        <p><strong>Age:</strong> <span id="inmateAge"></span></p>
+        <p><strong>Medical Condition:</strong> <span id="inmateCondition"></span></p>
+        <p><strong>Admission Date:</strong> <span id="inmateAdmission"></span></p>
+        
+        <h3>Medical Form</h3>
+        <iframe id="medicalForm" src="" width="100%" height="600px"></iframe>
+    </div>
+
+
+    <script src="js/inmate_details.js"></script>
+</body>
+</html>

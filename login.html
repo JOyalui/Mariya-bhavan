@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mariya Bhavanam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/LOGO_2.png" alt="Mariya Bhavanam Logo">
+        </div>
+        <h2>Login into Mariya Bhavanam's Management System</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <span class="error-icon">⚠</span>
+                </div>
+                <div class="error-message" id="errorMessage">
+                    <span class="error-icon">⚠</span> Incorrect password. Please try again.
+                </div>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/login_script.js"></script>
+</body>
+</html>

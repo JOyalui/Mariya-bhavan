@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmates - Mariya Bhavanam</title>
+    <link rel="stylesheet" href="css/comp.css">
+    <link rel="stylesheet" href="css/inmates.css">
+    <script defer src="js/inmates.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="images/logo_white.png" alt="Logo"></a>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#" class="active">Inmates</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Files</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="inmates-container">
+        <div class="controls">
+            <input class="input" type="text" id="search" placeholder="Search Inmates...">
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="recent">Recently Admitted</option>
+                <option value="elderly">Elderly</option>
+            </select>
+            <button id="toggleView">Toggle View</button>
+        </div>
+        
+        <div id="inmateList" class="grid-view">
+            <div class="inmate-card" onclick="showDetails('John Doe', 65, 'Diabetes', '2023-10-15')">
+                <h3>John Doe</h3>
+                <p>Age: 65</p>
+            </div>
+            <div class="inmate-card" onclick="showDetails('Jane Smith', 72, 'Hypertension', '2022-05-20')">
+                <h3>Jane Smith</h3>
+                <p>Age: 72</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="inmateModal" class="modal hidden" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="inmateName">John Doe</h2>
+            <p><strong>Age:</strong> <span id="inmateAge">65</span></p>
+            <p><strong>Medical Condition:</strong> <span id="inmateCondition">Diabetes</span></p>
+            <p><strong>Admission Date:</strong> <span id="inmateAdmission">2023-10-15</span></p>
+            <a id="inmateFileBtn" href="#" class="btn">Open Inmate File</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("toggleView").addEventListener("click", function() {
+            document.getElementById("inmateList").classList.toggle("grid-view");
+            document.getElementById("inmateList").classList.toggle("list-view");
+        });
+
+        function showDetails(name, age, condition, date) {
+            document.getElementById("inmateName").innerText = name;
+            document.getElementById("inmateAge").innerText = age;
+            document.getElementById("inmateCondition").innerText = condition;
+            document.getElementById("inmateAdmission").innerText = date;
+            document.getElementById("inmateModal").style.display = "flex";
+            document.getElementById("inmateFileBtn").href = `inmate_details.html?name=${name}`;
+        }
+
+        function closeModal(event) {
+            if (!event || event.target === document.getElementById("inmateModal")) {
+                document.getElementById("inmateModal").style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
