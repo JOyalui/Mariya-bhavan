@@ -6,9 +6,10 @@
     <title>Inmates - Mariya Bhavanam</title>
     <link rel="stylesheet" href="css/comp.css">
     <link rel="stylesheet" href="css/inmates.css">
-    <script defer src="js/inmates.js"></script>
+    <script defer src="js/inmates_script.js"></script>  
 </head>
 <body>
+
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo"><img src="images/logo_white.png" alt="Logo"></a>
@@ -34,19 +35,19 @@
         </div>
         
         <div id="inmateList" class="grid-view">
-            <div class="inmate-card" onclick="showDetails('John Doe', 65, 'Diabetes', '2023-10-15')">
+            <div class="inmate-card" data-age="65" data-condition="Diabetes" data-date="2023-10-15">
                 <h3>John Doe</h3>
                 <p>Age: 65</p>
             </div>
-            <div class="inmate-card" onclick="showDetails('Jane Smith', 72, 'Hypertension', '2022-05-20')">
+            <div class="inmate-card" data-age="72" data-condition="Hypertension" data-date="2022-05-20">
                 <h3>Jane Smith</h3>
                 <p>Age: 72</p>
             </div>
         </div>
     </main>
 
-    <div id="inmateModal" class="modal hidden" onclick="closeModal(event)">
-        <div class="modal-content" onclick="event.stopPropagation()">
+    <div id="inmateModal" class="modal hidden">
+        <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <h2 id="inmateName">John Doe</h2>
             <p><strong>Age:</strong> <span id="inmateAge">65</span></p>
@@ -56,26 +57,5 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById("toggleView").addEventListener("click", function() {
-            document.getElementById("inmateList").classList.toggle("grid-view");
-            document.getElementById("inmateList").classList.toggle("list-view");
-        });
-
-        function showDetails(name, age, condition, date) {
-            document.getElementById("inmateName").innerText = name;
-            document.getElementById("inmateAge").innerText = age;
-            document.getElementById("inmateCondition").innerText = condition;
-            document.getElementById("inmateAdmission").innerText = date;
-            document.getElementById("inmateModal").style.display = "flex";
-            document.getElementById("inmateFileBtn").href = `inmate_details.html?name=${name}`;
-        }
-
-        function closeModal(event) {
-            if (!event || event.target === document.getElementById("inmateModal")) {
-                document.getElementById("inmateModal").style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
