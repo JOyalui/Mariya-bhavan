@@ -24,7 +24,7 @@ body {
     padding-right: 30px;
      
 }
-
+  
   .navbar .logo img {
     height: 50px;
   }
@@ -38,16 +38,15 @@ body {
   .navbar .nav-links li a {
     color: #fff;
     text-decoration: none;
-    font-family: 'Inter';
+    font-family: 'Poppins';
   }
   
   .navbar .btn.login {
     border: 1px solid #ffffff;
     color: #fff;
-    padding: 8px 18px;
-    border-radius: 27px;
-    font-family: 'Inter';
-    text-decoration: none;  
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
   }
   .navbar .btn.login:hover {
     background-color: #1e9b95;
@@ -123,26 +122,74 @@ body {
 
 
 
-.details-navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+
+
+
+
+
+
+.details-navbar {
   background: #1D202B;
   color: #fff;
+  padding: 0.8rem 4rem;
+
 }
 
 .details-navbar .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0.5rem 0rem;
-}   
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
 
+/* Breadcrumb on the left */
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
+.breadcrumb {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb:hover {
+  color: #ffd700; /* Gold highlight on hover */
+}
+
+.breadcrumb-divider {
+  color: gray;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.current-page {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Logo in the center */
+.details-navbar .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .details-navbar .logo img {
   height: 30px;
 }
+
+
 
 
 

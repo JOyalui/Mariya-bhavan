@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background: #DFE3E2;
+}
+mark{
+    background-color: #7DB6A3;
+    border-radius: 3px;
+}
+
+::selection {
+    background: #A4DFCC;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+     
+}
+  
+  .navbar .logo img {
+    height: 50px;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+  }
+  
+  .navbar .nav-links li a {
+    color: #5A5A5A;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navbar .nav-links li a:hover {
+    color: #1EAEA5;
+}
+  
+  .navbar .btn-Donate {
+    border: 1px solid #ffffff;
+    color: #fff;
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 600;
+    background: #1EAEA5;
+    padding: 14px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.navbar .btn-Donate:hover {
+    background: #DFE3E2;
+    color: #5A5A5A;
+    border: 1px solid #5A5A5A;  
+
+}
+
+
+
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+}
+
+
+.hero-heading-section{
+    float: left;
+}
+.hero-heading-section h1{
+    max-width: 680px;
+    font-size: 62px;
+    color:#080808;
+}
+.hero-heading-section p{
+    padding: 8px 0px;
+    max-width: 480px;
+    font-size: large;
+}
+
+.hero-heading-section .hero-cta{
+    display: flex;
+    justify-content: start;
+    gap: 1rem;} 
+
+.hero-cta .donate-btn{ 
+    padding: 15px 35px;
+    text-decoration: none;
+    background: #1eaea5;
+    border: 1px solid #1eaea5;
+    color: #F2F5FF;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 28px;
+}
+
+.hero-cta .donate-btn:hover{ 
+    background: #1eaea5;
+    color: #F2F5FF;
+    border: 1px solid #1eaea5;
+    background: #6BA998 ;
+}
+
+
+.hero-cta .watch-video-btn{ 
+    padding: 15px 35px;
+    text-decoration: none;
+    border: 1px solid #1eaea5;
+    background: none;
+    color: #5A5A5A;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 28px;
+}
+.hero-cta .watch-video-btn:hover{ 
+    background: #54927D;
+    color: #fff;
+}
+
+.hero-image-section img{
+    width: 400px;
+}
+
+.whatwedo-section {
+    padding: 4rem 2rem;
+    background: #fff;
+    border-radius: 24px;
+    max-width: 1350px;
+    margin: 4rem auto;
+    }
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.img-heading {
+    text-align: center;
+    max-width: 530px;
+}
+
+.img-heading h2 {
+    font-size: 41px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    padding-left: 80px;
+}
+
+.img-heading img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.text-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.top-text {
+    font-size: 1.1rem;
+    color: #636568;
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.text-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 0rem;
+    margin-top: 2rem;
+}
+
+.text-box {
+    padding: 1rem;
+    border: 1px solid #080808;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.text-box:hover {
+    transform: translateY(-5px);
+}
+
+.text-box h3 {
+    font-size: 20px;
+    margin-bottom: 0rem;
+    font-weight: 600;
+}
+
+.text-box p {
+    font-size: 14;
+    color: #636568;
+    line-height: 1.6;
+    max-width: 470px;
+}
+
+.text-col-left{
+    display: flex;
+    gap: 1rem;
+}
+.text-col-right{
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .img-heading {
+        flex: 1;
+        text-align: left;
+    }
+    
+    .text-contents {
+        flex: 1;
+    }
+    
+    .top-text {
+        text-align: left;
+        margin: 0;
+        max-width: 400px;
+        padding-left: 330px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-heading h2 {
+        font-size: 2rem;
+    }
+    
+    .text-box h3 {
+        font-size: 1.2rem;
+    }
+}
